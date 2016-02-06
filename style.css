@@ -1,0 +1,80 @@
+/*---------------------------------------------------------------*/
+.hw-galleries {
+    width: 98%;
+    margin: auto;
+    max-height: 450px;
+    border:1px solid rgb(186, 140, 140);
+    overflow: auto;
+    overflow-x:hidden;
+    min-height: 40px;
+    display: inline-block;
+}
+.album-images {
+
+}
+.image-item{
+    border:1px solid #dadada;
+    padding:4px;
+    background:#fff;
+    display: inline-block;
+    margin: 4px;
+    cursor:pointer;
+    position: relative;
+}
+.image-item:active {
+    background: #DC7777;
+}
+.image-item:hover{
+    background: #DC7777;
+}
+.image-item .thumb{
+    width:80px;
+    height:80px;
+}
+.image-item.hw-selected .selection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    display: none;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    background: url(images/site-sprite.png) no-repeat scroll -83px -139px #F39814;
+    display: block;
+}
+.hw-selected {
+    background:#F39814 !important;
+}
+.hw-loading{
+    background: url('images/loading.gif') no-repeat;
+    display: inline-block;
+}
+/*button*/
+.hw-button {
+    background: #5B74A8;
+    background: -moz-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#5B74A8), color-stop(100%,#5B74A8));
+    background: -webkit-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+    background: -o-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+    background: -ms-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+    background: linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5B74A8',endColorstr='#5B74A8',GradientType=0);
+    padding:2px 6px;
+    color:#fff;
+    font-family:'Helvetica',sans-serif;
+    font-size:15px;
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border:1px solid #1A356E;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.hw-button:hover{
+    color:#fff !important;
+}
+.wmd-prompt-dialog{
+    height: auto !important;
+}
